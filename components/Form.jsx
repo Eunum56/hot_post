@@ -1,8 +1,8 @@
 import { IoIosCreate } from "react-icons/io";
-import { GrUpdate } from "react-icons/gr";
 
 import Link from "next/link";
 import React from "react";
+import Loader from "./Loader";
 
 const Form = ({ type, form, setform, submitting, handleSubmit }) => {
   return (
@@ -57,7 +57,7 @@ const Form = ({ type, form, setform, submitting, handleSubmit }) => {
           >
             {submitting ? (
               <>
-                {`${type}...`} <GrUpdate />
+                {`${type}ing...`} <Loader size="20px" color="white" />
               </>
             ) : (
               <>

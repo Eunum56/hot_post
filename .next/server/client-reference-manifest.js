@@ -718,54 +718,54 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
-    "(app-client)/./components/Feed.jsx": {
+    "(app-client)/./components/Nav.jsx": {
       "*": {
-        "id": "(sc_client)/./components/Feed.jsx",
+        "id": "(sc_client)/./components/Nav.jsx",
         "name": "*",
         "chunks": [
-          "app/page:static/chunks/app/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       },
       "": {
-        "id": "(sc_client)/./components/Feed.jsx",
+        "id": "(sc_client)/./components/Nav.jsx",
         "name": "",
         "chunks": [
-          "app/page:static/chunks/app/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./components/Feed.jsx",
+        "id": "(sc_client)/./components/Nav.jsx",
         "name": "default",
         "chunks": [
-          "app/page:static/chunks/app/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       }
     },
-    "(app-client)/./components/PostCard.jsx": {
+    "(app-client)/./components/Provider.jsx": {
       "*": {
-        "id": "(sc_client)/./components/PostCard.jsx",
+        "id": "(sc_client)/./components/Provider.jsx",
         "name": "*",
         "chunks": [
-          "app/profile/page:static/chunks/app/profile/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       },
       "": {
-        "id": "(sc_client)/./components/PostCard.jsx",
+        "id": "(sc_client)/./components/Provider.jsx",
         "name": "",
         "chunks": [
-          "app/profile/page:static/chunks/app/profile/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./components/PostCard.jsx",
+        "id": "(sc_client)/./components/Provider.jsx",
         "name": "default",
         "chunks": [
-          "app/profile/page:static/chunks/app/profile/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       }
@@ -792,6 +792,32 @@ self.__RSC_MANIFEST={
         "name": "default",
         "chunks": [
           "app/profile/page:static/chunks/app/profile/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/link.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "*",
+        "chunks": [
+          "app/create-post/page:static/chunks/app/create-post/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "",
+        "chunks": [
+          "app/create-post/page:static/chunks/app/create-post/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "default",
+        "chunks": [
+          "app/create-post/page:static/chunks/app/create-post/page.js"
         ],
         "async": false
       }
@@ -942,87 +968,61 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
-    "(app-client)/./components/Nav.jsx": {
+    "(app-client)/./app/page.jsx": {
       "*": {
-        "id": "(sc_client)/./components/Nav.jsx",
+        "id": "(sc_client)/./app/page.jsx",
         "name": "*",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
       "": {
-        "id": "(sc_client)/./components/Nav.jsx",
+        "id": "(sc_client)/./app/page.jsx",
         "name": "",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./components/Nav.jsx",
+        "id": "(sc_client)/./app/page.jsx",
         "name": "default",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       }
     },
-    "(app-client)/./components/Provider.jsx": {
+    "(app-client)/./components/Feed.jsx": {
       "*": {
-        "id": "(sc_client)/./components/Provider.jsx",
+        "id": "(sc_client)/./components/Feed.jsx",
         "name": "*",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
       "": {
-        "id": "(sc_client)/./components/Provider.jsx",
+        "id": "(sc_client)/./components/Feed.jsx",
         "name": "",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./components/Provider.jsx",
+        "id": "(sc_client)/./components/Feed.jsx",
         "name": "default",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/page:static/chunks/app/page.js"
         ],
         "async": false
       }
     },
-    "(app-client)/./node_modules/next/dist/client/link.js": {
+    "(app-client)/./components/Loader.jsx": {
       "*": {
-        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
-        "name": "*",
-        "chunks": [
-          "app/update-post/page:static/chunks/app/update-post/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
-        "name": "",
-        "chunks": [
-          "app/update-post/page:static/chunks/app/update-post/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
-        "name": "default",
-        "chunks": [
-          "app/update-post/page:static/chunks/app/update-post/page.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./app/profile/page.jsx": {
-      "*": {
-        "id": "(sc_client)/./app/profile/page.jsx",
+        "id": "(sc_client)/./components/Loader.jsx",
         "name": "*",
         "chunks": [
           "app/profile/page:static/chunks/app/profile/page.js"
@@ -1030,7 +1030,7 @@ self.__RSC_MANIFEST={
         "async": false
       },
       "": {
-        "id": "(sc_client)/./app/profile/page.jsx",
+        "id": "(sc_client)/./components/Loader.jsx",
         "name": "",
         "chunks": [
           "app/profile/page:static/chunks/app/profile/page.js"
@@ -1038,7 +1038,33 @@ self.__RSC_MANIFEST={
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./app/profile/page.jsx",
+        "id": "(sc_client)/./components/Loader.jsx",
+        "name": "default",
+        "chunks": [
+          "app/profile/page:static/chunks/app/profile/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/PostCard.jsx": {
+      "*": {
+        "id": "(sc_client)/./components/PostCard.jsx",
+        "name": "*",
+        "chunks": [
+          "app/profile/page:static/chunks/app/profile/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/PostCard.jsx",
+        "name": "",
+        "chunks": [
+          "app/profile/page:static/chunks/app/profile/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/PostCard.jsx",
         "name": "default",
         "chunks": [
           "app/profile/page:static/chunks/app/profile/page.js"
@@ -1072,28 +1098,54 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
-    "(app-client)/./app/update-post/page.jsx": {
+    "(app-client)/./app/profile/[id]/page.jsx": {
       "*": {
-        "id": "(sc_client)/./app/update-post/page.jsx",
+        "id": "(sc_client)/./app/profile/[id]/page.jsx",
         "name": "*",
         "chunks": [
-          "app/update-post/page:static/chunks/app/update-post/page.js"
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
         ],
         "async": false
       },
       "": {
-        "id": "(sc_client)/./app/update-post/page.jsx",
+        "id": "(sc_client)/./app/profile/[id]/page.jsx",
         "name": "",
         "chunks": [
-          "app/update-post/page:static/chunks/app/update-post/page.js"
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
         ],
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./app/update-post/page.jsx",
+        "id": "(sc_client)/./app/profile/[id]/page.jsx",
         "name": "default",
         "chunks": [
-          "app/update-post/page:static/chunks/app/update-post/page.js"
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/profile/page.jsx": {
+      "*": {
+        "id": "(sc_client)/./app/profile/page.jsx",
+        "name": "*",
+        "chunks": [
+          "app/profile/page:static/chunks/app/profile/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/profile/page.jsx",
+        "name": "",
+        "chunks": [
+          "app/profile/page:static/chunks/app/profile/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/profile/page.jsx",
+        "name": "default",
+        "chunks": [
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       }
@@ -2754,51 +2806,58 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Feed.jsx": {
-      "id": "(app-client)/./components/Feed.jsx",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Feed.jsx#": {
-      "id": "(app-client)/./components/Feed.jsx",
-      "name": "",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Feed.jsx#default": {
-      "id": "(app-client)/./components/Feed.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\styles\\globals.css#": {
+      "id": "null",
       "name": "default",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
+        "static/css/app/layout.css"
+      ]
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\PostCard.jsx": {
-      "id": "(app-client)/./components/PostCard.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Nav.jsx": {
+      "id": "(app-client)/./components/Nav.jsx",
       "name": "*",
       "chunks": [
-        "app/profile/page:static/chunks/app/profile/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\PostCard.jsx#": {
-      "id": "(app-client)/./components/PostCard.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Nav.jsx#": {
+      "id": "(app-client)/./components/Nav.jsx",
       "name": "",
       "chunks": [
-        "app/profile/page:static/chunks/app/profile/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\PostCard.jsx#default": {
-      "id": "(app-client)/./components/PostCard.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Nav.jsx#default": {
+      "id": "(app-client)/./components/Nav.jsx",
       "name": "default",
       "chunks": [
-        "app/profile/page:static/chunks/app/profile/page.js"
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Provider.jsx": {
+      "id": "(app-client)/./components/Provider.jsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Provider.jsx#": {
+      "id": "(app-client)/./components/Provider.jsx",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Provider.jsx#default": {
+      "id": "(app-client)/./components/Provider.jsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -2847,6 +2906,54 @@ self.__RSC_MANIFEST={
       "name": "default",
       "chunks": [
         "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/create-post/page:static/chunks/app/create-post/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/create-post/page:static/chunks/app/create-post/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\link.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/create-post/page:static/chunks/app/create-post/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\link.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/create-post/page:static/chunks/app/create-post/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\link.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/create-post/page:static/chunks/app/create-post/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\link.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/create-post/page:static/chunks/app/create-post/page.js"
       ],
       "async": false
     },
@@ -3138,127 +3245,96 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\styles\\globals.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/layout.css"
-      ]
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Nav.jsx": {
-      "id": "(app-client)/./components/Nav.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\page.jsx": {
+      "id": "(app-client)/./app/page.jsx",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Nav.jsx#": {
-      "id": "(app-client)/./components/Nav.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\page.jsx#": {
+      "id": "(app-client)/./app/page.jsx",
       "name": "",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Nav.jsx#default": {
-      "id": "(app-client)/./components/Nav.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\page.jsx#default": {
+      "id": "(app-client)/./app/page.jsx",
       "name": "default",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Provider.jsx": {
-      "id": "(app-client)/./components/Provider.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Feed.jsx": {
+      "id": "(app-client)/./components/Feed.jsx",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Provider.jsx#": {
-      "id": "(app-client)/./components/Provider.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Feed.jsx#": {
+      "id": "(app-client)/./components/Feed.jsx",
       "name": "",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Provider.jsx#default": {
-      "id": "(app-client)/./components/Provider.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Feed.jsx#default": {
+      "id": "(app-client)/./components/Feed.jsx",
       "name": "default",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/page:static/chunks/app/page.js"
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/update-post/page:static/chunks/app/update-post/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/update-post/page:static/chunks/app/update-post/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\link.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "",
-      "chunks": [
-        "app/update-post/page:static/chunks/app/update-post/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\link.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "",
-      "chunks": [
-        "app/update-post/page:static/chunks/app/update-post/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\link.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "default",
-      "chunks": [
-        "app/update-post/page:static/chunks/app/update-post/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\link.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "default",
-      "chunks": [
-        "app/update-post/page:static/chunks/app/update-post/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\profile\\page.jsx": {
-      "id": "(app-client)/./app/profile/page.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Loader.jsx": {
+      "id": "(app-client)/./components/Loader.jsx",
       "name": "*",
       "chunks": [
         "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\profile\\page.jsx#": {
-      "id": "(app-client)/./app/profile/page.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Loader.jsx#": {
+      "id": "(app-client)/./components/Loader.jsx",
       "name": "",
       "chunks": [
         "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\profile\\page.jsx#default": {
-      "id": "(app-client)/./app/profile/page.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Loader.jsx#default": {
+      "id": "(app-client)/./components/Loader.jsx",
+      "name": "default",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\PostCard.jsx": {
+      "id": "(app-client)/./components/PostCard.jsx",
+      "name": "*",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\PostCard.jsx#": {
+      "id": "(app-client)/./components/PostCard.jsx",
+      "name": "",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\PostCard.jsx#default": {
+      "id": "(app-client)/./components/PostCard.jsx",
       "name": "default",
       "chunks": [
         "app/profile/page:static/chunks/app/profile/page.js"
@@ -3289,27 +3365,51 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\update-post\\page.jsx": {
-      "id": "(app-client)/./app/update-post/page.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\profile\\[id]\\page.jsx": {
+      "id": "(app-client)/./app/profile/[id]/page.jsx",
       "name": "*",
       "chunks": [
-        "app/update-post/page:static/chunks/app/update-post/page.js"
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\update-post\\page.jsx#": {
-      "id": "(app-client)/./app/update-post/page.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\profile\\[id]\\page.jsx#": {
+      "id": "(app-client)/./app/profile/[id]/page.jsx",
       "name": "",
       "chunks": [
-        "app/update-post/page:static/chunks/app/update-post/page.js"
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\update-post\\page.jsx#default": {
-      "id": "(app-client)/./app/update-post/page.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\profile\\[id]\\page.jsx#default": {
+      "id": "(app-client)/./app/profile/[id]/page.jsx",
       "name": "default",
       "chunks": [
-        "app/update-post/page:static/chunks/app/update-post/page.js"
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\profile\\page.jsx": {
+      "id": "(app-client)/./app/profile/page.jsx",
+      "name": "*",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\profile\\page.jsx#": {
+      "id": "(app-client)/./app/profile/page.jsx",
+      "name": "",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\profile\\page.jsx#default": {
+      "id": "(app-client)/./app/profile/page.jsx",
+      "name": "default",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     }

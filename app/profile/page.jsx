@@ -4,11 +4,13 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
 import Profile from "@components/Profile";
+import Loader from "@components/Loader";
 
 const ProfilePage = () => {
   const router = useRouter();
   const { data: session } = useSession();
   const [Posts, setPosts] = useState([]);
+  const [Loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchPost = async () => {
@@ -16,11 +18,12 @@ const ProfilePage = () => {
       const data = await response.json();
 
       setPosts(data);
+      setLoading(false);
     };
     if (session?.user.id) {
       fetchPost();
     }
-  }, []);
+  }, [session?.user.id]);
   const handleEdit = async (post) => {
     router.push(`/update-post?id=${post._id}`);
   };
@@ -39,12 +42,20 @@ const ProfilePage = () => {
     }
   };
 
+  if (Loading) {
+    return (
+      <div className="mt-[50%] sm:mt-[25%]">
+        <Loader size="100px" color="rgb(52 211 153)" />
+      </div>
+    );
+  }
+
   return (
     <Profile
-      name="My"
-      about="about"
-      image="/Image/logo.svg"
-      email="Email"
+      name={Posts[0].creator.username}
+      about={Posts[0].creator.description}
+      image={Posts[0].creator.image}
+      email={Posts[0].creator.email}
       data={Posts}
       handleEdit={handleEdit}
       handleDelete={handleDelete}

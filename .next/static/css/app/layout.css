@@ -502,6 +502,9 @@ video {
 .right-0{
   right: 0px;
 }
+.top-0{
+  top: 0px;
+}
 .z-10{
   z-index: 10;
 }
@@ -526,6 +529,9 @@ video {
 .mb-5{
   margin-bottom: 1.25rem;
 }
+.mt-10{
+  margin-top: 2.5rem;
+}
 .mt-2{
   margin-top: 0.5rem;
 }
@@ -538,14 +544,20 @@ video {
 .mt-8{
   margin-top: 2rem;
 }
-.block{
-  display: block;
+.mt-20{
+  margin-top: 5rem;
+}
+.mt-\[50\%\]{
+  margin-top: 50%;
 }
 .flex{
   display: flex;
 }
 .hidden{
   display: none;
+}
+.h-full{
+  height: 100%;
 }
 .w-32{
   width: 8rem;
@@ -568,6 +580,15 @@ video {
 .flex-1{
   flex: 1 1 0%;
 }
+@keyframes spin{
+
+  to{
+    transform: rotate(360deg);
+  }
+}
+.animate-spin{
+  animation: spin 1s linear infinite;
+}
 .cursor-pointer{
   cursor: pointer;
 }
@@ -588,6 +609,9 @@ video {
 }
 .justify-end{
   justify-content: flex-end;
+}
+.justify-center{
+  justify-content: center;
 }
 .justify-between{
   justify-content: space-between;
@@ -618,6 +642,10 @@ video {
 }
 .border{
   border-width: 1px;
+}
+.border-purple-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(192 132 252 / var(--tw-border-opacity));
 }
 .bg-black\/50{
   background-color: rgb(0 0 0 / 0.5);
@@ -684,6 +712,9 @@ video {
 .font-montserrat{
   font-family: Montserrat, sans-serif;
 }
+.font-palanquin{
+  font-family: Palanquin, sans-serif;
+}
 .font-satoshi{
   font-family: Satoshi, sans-serif;
 }
@@ -723,6 +754,10 @@ video {
 .text-red-600{
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+.text-slate-400{
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 .text-slate-600{
   --tw-text-opacity: 1;
@@ -1055,8 +1090,8 @@ video {
   margin-top: 0.5rem;
   width: 100%;
   text-align: center;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
@@ -1347,6 +1382,20 @@ video {
   justify-content: space-between;
 }
 
+.loader {
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .hover\:bg-gray-100:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -1383,6 +1432,14 @@ video {
 }
 
 @media (min-width: 640px){
+
+  .sm\:mt-\[20\%\]{
+    margin-top: 20%;
+  }
+
+  .sm\:mt-\[25\%\]{
+    margin-top: 25%;
+  }
 
   .sm\:flex{
     display: flex;

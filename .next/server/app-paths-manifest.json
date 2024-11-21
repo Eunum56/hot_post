@@ -1,4 +1,8 @@
 {
   "/page": "app/page.js",
-  "/update-post/page": "app/update-post/page.js"
+  "/profile/page": "app/profile/page.js",
+  "/profile/[id]/page": "app/profile/[id]/page.js",
+  "/api/post/route": "app/api/post/route.js",
+  "/api/users/[id]/route": "app/api/users/[id]/route.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js"
 }

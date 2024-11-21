@@ -2,13 +2,13 @@
 
 import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
-import { MdAutoDelete } from "react-icons/md";
 import { MdOutlineCancel } from "react-icons/md";
 
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useSession } from "@node_modules/next-auth/react";
 import { usePathname, useRouter } from "@node_modules/next/navigation";
+import Loader from "./Loader";
 
 const PostCard = ({ post, handleTagClicked, handleEdit, handleDelete }) => {
   const { data: session } = useSession();
@@ -49,10 +49,20 @@ const PostCard = ({ post, handleTagClicked, handleEdit, handleDelete }) => {
     };
   }, [showMenu]);
 
+  const handleProfileClick = () => {
+    if (post.creator._id === session?.user.id) return router.push("/profile");
+    router.push(
+      `/profile/${post.creator._id}?name=${post.creator.username}&image=${post.creator.image}&about=${post.creator.description}&email=${post.creator.email}`
+    );
+  };
+
   return (
     <div className="post_card relative bg-white p-4 rounded-lg shadow-md">
       <div className="flex justify-between items-start gap-5">
-        <div className="flex-1 flex justify-start items-center gap-3 cursor-pointer">
+        <div
+          className="flex-1 flex justify-start items-center gap-3 cursor-pointer"
+          onClick={handleProfileClick}
+        >
           <Image
             src={post.creator.image}
             alt="Profile Image"
@@ -139,7 +149,7 @@ const PostCard = ({ post, handleTagClicked, handleEdit, handleDelete }) => {
               >
                 {isDeleting ? (
                   <>
-                    Deleting... <MdAutoDelete />
+                    Deleting... <Loader size="15px" color="white" />
                   </>
                 ) : (
                   <>

@@ -9,8 +9,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { signIn, useSession, getProviders, signOut } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 const Nav = () => {
+  const router = useRouter();
   const { data: session } = useSession();
 
   const [Providers, setProviders] = useState(null);
@@ -64,7 +66,9 @@ const Nav = () => {
             </Link>
             <button
               type="button"
-              onClick={signOut}
+              onClick={() => {
+                signOut({ callbackUrl: "/" });
+              }}
               className="outline_blue_btn flex items-center gap-2"
             >
               Sign Out <HiOutlineLogout />
@@ -131,7 +135,7 @@ const Nav = () => {
                   type="button"
                   onClick={() => {
                     setMobileToggle(false);
-                    signOut();
+                    signOut({ callbackUrl: "/" });
                   }}
                   className="mt-3 w-full blue_btn flex items-center gap-2"
                 >

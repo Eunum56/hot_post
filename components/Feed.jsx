@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import PostCard from "./PostCard";
+import Loader from "./Loader";
 
 const PostList = ({ data, handleTagClicked }) => {
   return (
@@ -17,23 +18,63 @@ const PostList = ({ data, handleTagClicked }) => {
 };
 
 const Feed = () => {
-  const [SearchText, setSearchText] = useState("");
+  const [fetching, setFetching] = useState(true);
+
   const [Posts, setPosts] = useState([]);
 
-  const handleSearchChange = (e) => {};
+  const [SearchText, setSearchText] = useState("");
+  const [searchTimeout, setSearchTimeout] = useState(null);
+  const [searchedResults, setSearchedResults] = useState([]);
+
+  const fetchPost = async () => {
+    const response = await fetch("/api/post");
+    const data = await response.json();
+
+    setPosts(data);
+    setFetching(false);
+  };
 
   useEffect(() => {
-    const fetchPost = async () => {
-      const response = await fetch("/api/post");
-      const data = await response.json();
-
-      setPosts(data);
-    };
     fetchPost();
   }, []);
+
+  const filterPosts = (searchtext) => {
+    const register = new RegExp(searchtext, "i");
+    return Posts.filter(
+      (item) =>
+        register.test(item.creator.username) ||
+        register.test(item.tags) ||
+        register.test(item.post)
+    );
+  };
+
+  const handleSearchChange = (e) => {
+    clearTimeout(searchTimeout);
+    setSearchText(e.target.value);
+
+    setSearchTimeout(
+      setTimeout(() => {
+        const searchResult = filterPosts(e.target.value);
+        setSearchedResults(searchResult);
+      }, 500)
+    );
+  };
+
+  const handleTagClicked = (tagname) => {
+    console.log("tag is", tagname);
+    setSearchText(tagname);
+
+    const searchResult = filterPosts(tagname);
+    setSearchedResults(searchResult);
+  };
+
+  const preventDefault = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <section className="feed">
-      <form className="relative w-full flex-center">
+      <form className="relative w-full flex-center" onSubmit={preventDefault}>
         <input
           type="text"
           placeholder="Search..."
@@ -43,8 +84,15 @@ const Feed = () => {
           className="search_input peer"
         />
       </form>
-
-      <PostList data={Posts} handleTagClicked={() => {}} />
+      {fetching ? (
+        <div className="mt-20">
+          <Loader size="100px" color="rgb(2 132 199)" />
+        </div>
+      ) : SearchText ? (
+        <PostList data={searchedResults} handleTagClicked={handleTagClicked} />
+      ) : (
+        <PostList data={Posts} handleTagClicked={handleTagClicked} />
+      )}
     </section>
   );
 };

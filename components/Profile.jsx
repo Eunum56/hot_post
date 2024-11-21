@@ -1,7 +1,14 @@
-import Link from "@node_modules/next/link";
+//
+
 import Image from "next/image";
 import { useState } from "react";
 import PostCard from "./PostCard";
+import Loader from "./Loader";
+import { useSession } from "@node_modules/next-auth/react";
+import { usePathname } from "@node_modules/next/navigation";
+
+import { FaRegEdit } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 const Profile = ({
   name,
@@ -13,8 +20,42 @@ const Profile = ({
   handleDelete,
 }) => {
   const [isUpdate, setIsUpdate] = useState(true);
+  const [updateLoading, setUpdateLoading] = useState(false);
+  const [newAbout, setNewAbout] = useState(about);
+  const [currentAbout, setCurrentAbout] = useState(about);
+  const { data: session } = useSession();
+  const router = useRouter();
+  const pathName = usePathname();
 
-  const handleUpdate = () => {};
+  const handleUpdateClick = () => {
+    setIsUpdate(false);
+  };
+
+  const handleUpdateSubmit = async (e) => {
+    e.preventDefault();
+    setUpdateLoading(true);
+    try {
+      const response = await fetch("/api/updateDesc", {
+        method: "PATCH",
+        body: JSON.stringify({
+          desc: newAbout,
+          userId: session?.user.id,
+        }),
+      });
+
+      if (response.ok) {
+        setCurrentAbout(newAbout);
+        setUpdateLoading(false);
+        setIsUpdate(true);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const handleCancel = () => {
+    setIsUpdate(true);
+  };
 
   return (
     <section className="w-full">
@@ -29,36 +70,57 @@ const Profile = ({
           />
         </div>
         <div>
-          <h5 className="font-extrabold text-base text-slate-600">{name}</h5>
-          <h6 className="email">{email}</h6>
+          <h5 className="font-extrabold text-center text-base font-satoshi text-slate-600">
+            {name}
+          </h5>
+          <h6 className="text-center text-slate-400">{email}</h6>
         </div>
       </div>
-      <div className="about">
+      <div className="relative">
         {isUpdate ? (
-          <div className="update_desc">{about}</div>
+          <div className="update_desc">
+            {currentAbout}
+            {session?.user.email === email && pathName === "/profile" && (
+              <div
+                className="absolute right-0 top-0"
+                onClick={handleUpdateClick}
+              >
+                <FaRegEdit />
+              </div>
+            )}
+          </div>
         ) : (
-          <form>
+          <form onSubmit={handleUpdateSubmit}>
             <input
               type="text"
-              value={about}
-              onClick={handleUpdate}
+              value={newAbout}
+              onChange={(e) => setNewAbout(e.target.value)}
               className="form_input"
             />
             <div className="flex-end mx-3 mb-5 gap-4">
-              <Link href="/profile" className="text-gray-500 text-sm">
+              <p
+                onClick={handleCancel}
+                className="text-gray-500 text-sm cursor-pointer"
+              >
                 Cancel
-              </Link>
+              </p>
               <button
                 type="submit"
-                disabled={isUpdate}
-                className="px-5 py-1.5 mt-2 max-sm:px-2 text-sm rounded-full text-white bg-primary-blue"
+                className="flex items-center gap-2 px-5 py-1.5 mt-2 max-sm:px-2 text-sm rounded-full text-white bg-primary-blue"
               >
-                {isUpdate ? "Updateing" : "Update"}
+                {updateLoading ? (
+                  <>
+                    Updating... <Loader size="20px" color="white" />
+                  </>
+                ) : (
+                  "Update"
+                )}
               </button>
             </div>
           </form>
         )}
       </div>
+
       <div className="mt-6 post_layout ">
         {data.map((post) => (
           <PostCard
