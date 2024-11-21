@@ -1,21 +1,27 @@
 "use client";
 
+import { MdOutlinePostAdd } from "react-icons/md";
+import { HiOutlineLogin } from "react-icons/hi";
+import { HiOutlineLogout } from "react-icons/hi";
+import { CgProfile } from "react-icons/cg";
+
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect } from "react";
-import {
-  signIn,
-  singOut,
-  useSession,
-  getProviders,
-  signOut,
-} from "next-auth/react";
+import { useState, useEffect, useRef } from "react";
+import { signIn, useSession, getProviders, signOut } from "next-auth/react";
 
 const Nav = () => {
   const { data: session } = useSession();
 
   const [Providers, setProviders] = useState(null);
   const [MobileToggle, setMobileToggle] = useState(false);
+  const menuRef = useRef(null);
+
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setMobileToggle(false);
+    }
+  };
 
   useEffect(() => {
     const setUpProviders = async () => {
@@ -23,7 +29,16 @@ const Nav = () => {
       setProviders(response);
     };
     setUpProviders();
-  }, []);
+
+    if (MobileToggle) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [MobileToggle]);
 
   return (
     <nav className="flex-between w-full mb-10 pt-3">
@@ -41,15 +56,18 @@ const Nav = () => {
       <div className="sm:flex hidden">
         {session?.user ? (
           <div className="flex gap-3 md:gap-5">
-            <Link href="/create-post" className="blue_btn">
-              Create Post
+            <Link
+              href="/create-post"
+              className="flex items-center gap-2 blue_btn"
+            >
+              Create Post <MdOutlinePostAdd />
             </Link>
             <button
               type="button"
               onClick={signOut}
-              className="outline_blue_btn"
+              className="outline_blue_btn flex items-center gap-2"
             >
-              Sign Out
+              Sign Out <HiOutlineLogout />
             </button>
 
             <Link href="/profile">
@@ -70,9 +88,9 @@ const Nav = () => {
                   type="button"
                   onClick={() => signIn(provider.id)}
                   key={provider.name}
-                  className="blue_btn"
+                  className="blue_btn flex items-center gap-2"
                 >
-                  Sign In
+                  Sign In <HiOutlineLogin />
                 </button>
               ))}
           </>
@@ -80,7 +98,7 @@ const Nav = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div className="sm:hidden flex relative">
+      <div className="sm:hidden flex relative z-10" ref={menuRef}>
         {session?.user ? (
           <div className="flex">
             <Image
@@ -96,17 +114,17 @@ const Nav = () => {
               <div className="dropdown">
                 <Link
                   href="/profile"
-                  className="dropdown_link"
+                  className="dropdown_link flex items-center gap-2"
                   onClick={() => setMobileToggle(false)}
                 >
-                  My Profile
+                  My Profile <CgProfile />
                 </Link>
                 <Link
                   href="/create-post"
-                  className="dropdown_link"
+                  className="dropdown_link flex items-center gap-2"
                   onClick={() => setMobileToggle(false)}
                 >
-                  Create Post
+                  Create Post <MdOutlinePostAdd />
                 </Link>
 
                 <button
@@ -115,9 +133,9 @@ const Nav = () => {
                     setMobileToggle(false);
                     signOut();
                   }}
-                  className="mt-3 w-full blue_btn"
+                  className="mt-3 w-full blue_btn flex items-center gap-2"
                 >
-                  Sign Out
+                  Sign Out <HiOutlineLogout />
                 </button>
               </div>
             )}
@@ -130,9 +148,9 @@ const Nav = () => {
                   type="button"
                   onClick={() => signIn(provider.id)}
                   key={provider.name}
-                  className="blue_btn"
+                  className="blue_btn flex items-center gap-2"
                 >
-                  Sign In
+                  Sign In <HiOutlineLogin />
                 </button>
               ))}
           </>

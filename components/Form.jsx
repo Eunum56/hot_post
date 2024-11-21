@@ -1,3 +1,6 @@
+import { IoIosCreate } from "react-icons/io";
+import { GrUpdate } from "react-icons/gr";
+
 import Link from "next/link";
 import React from "react";
 
@@ -50,9 +53,17 @@ const Form = ({ type, form, setform, submitting, handleSubmit }) => {
           <button
             type="submit"
             disabled={submitting}
-            className="px-5 py-1.5 text-sm rounded-full text-white bg-primary-blue"
+            className="flex items-center gap-2 px-5 py-1.5 text-sm rounded-full text-white bg-primary-blue"
           >
-            {submitting ? `${type}...` : type}
+            {submitting ? (
+              <>
+                {`${type}...`} <GrUpdate />
+              </>
+            ) : (
+              <>
+                {type} <IoIosCreate />
+              </>
+            )}
           </button>
         </div>
       </form>

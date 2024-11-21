@@ -11,7 +11,7 @@ const PostSchema = new Schema({
         required: [true, "Post description is required"]
     },
     tags: {
-        type: [String],
+        type: String,
         required: [true, "Tags are required"]
     },
     reactions: {
@@ -27,12 +27,10 @@ const PostSchema = new Schema({
     comments: {
         text: {
             type: String,
-            required: true
         },
         user: {
             type: Schema.Types.ObjectId,
             ref: "User",
-            required: true
         }
     }
 })

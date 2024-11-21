@@ -4,7 +4,7 @@ import PostCard from "./PostCard";
 
 const PostList = ({ data, handleTagClicked }) => {
   return (
-    <div className="mt-10 post_layout ">
+    <div className="post_layout ">
       {data.map((post) => (
         <PostCard
           key={post._id}

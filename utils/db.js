@@ -1,8 +1,9 @@
 import mongoose from "mongoose";
 
-let isConnected = false;
 
 export const connectDB = async () => {
+    let isConnected = false;
+
     mongoose.set("strictQuery", true)
 
     if (isConnected) {
@@ -15,13 +16,14 @@ export const connectDB = async () => {
             dbName: "hotpost",
             useNewUrlParser: true,
             useUnifiedTopology: true,
-            serverSelectionTimeoutMS: 30000,
         })
 
         isConnected = true
         console.log("MongoDB Connected")
 
     } catch (error) {
-        console.log(error)
+        console.log("Mongodb error", error)
     }
 }
+
+

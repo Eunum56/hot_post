@@ -749,7 +749,7 @@
         "id": "(sc_client)/./components/PostCard.jsx",
         "name": "*",
         "chunks": [
-          "app/page:static/chunks/app/page.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       },
@@ -757,7 +757,7 @@
         "id": "(sc_client)/./components/PostCard.jsx",
         "name": "",
         "chunks": [
-          "app/page:static/chunks/app/page.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       },
@@ -765,7 +765,7 @@
         "id": "(sc_client)/./components/PostCard.jsx",
         "name": "default",
         "chunks": [
-          "app/page:static/chunks/app/page.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       }
@@ -775,7 +775,7 @@
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
         "name": "*",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       },
@@ -783,7 +783,7 @@
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
         "name": "",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       },
@@ -791,7 +791,7 @@
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
         "name": "default",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       }
@@ -801,7 +801,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "*",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       },
@@ -809,7 +809,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       },
@@ -817,7 +817,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "default",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       },
@@ -825,7 +825,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "defaultHead",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       },
@@ -833,7 +833,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "charSet",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       },
@@ -841,7 +841,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "name",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       },
@@ -849,7 +849,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "content",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       },
@@ -857,7 +857,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "\"title\"",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       },
@@ -865,7 +865,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "\"base\"",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       },
@@ -873,7 +873,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "\"meta\"",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       },
@@ -881,7 +881,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "TODO(prateekbh@)",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       },
@@ -889,7 +889,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "\"https",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       },
@@ -897,7 +897,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "here",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       },
@@ -905,7 +905,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "https",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       },
@@ -913,7 +913,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "reduceComponentsToState",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       },
@@ -921,7 +921,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "headManager",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       },
@@ -929,7 +929,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "inAmpMode",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       },
@@ -937,7 +937,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "value",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/profile/page:static/chunks/app/profile/page.js"
         ],
         "async": false
       }
@@ -999,7 +999,7 @@
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "*",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/update-post/page:static/chunks/app/update-post/page.js"
         ],
         "async": false
       },
@@ -1007,7 +1007,7 @@
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/update-post/page:static/chunks/app/update-post/page.js"
         ],
         "async": false
       },
@@ -1015,7 +1015,85 @@
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "default",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/update-post/page:static/chunks/app/update-post/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/profile/page.jsx": {
+      "*": {
+        "id": "(sc_client)/./app/profile/page.jsx",
+        "name": "*",
+        "chunks": [
+          "app/profile/page:static/chunks/app/profile/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/profile/page.jsx",
+        "name": "",
+        "chunks": [
+          "app/profile/page:static/chunks/app/profile/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/profile/page.jsx",
+        "name": "default",
+        "chunks": [
+          "app/profile/page:static/chunks/app/profile/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/create-post/page.jsx": {
+      "*": {
+        "id": "(sc_client)/./app/create-post/page.jsx",
+        "name": "*",
+        "chunks": [
+          "app/create-post/page:static/chunks/app/create-post/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/create-post/page.jsx",
+        "name": "",
+        "chunks": [
+          "app/create-post/page:static/chunks/app/create-post/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/create-post/page.jsx",
+        "name": "default",
+        "chunks": [
+          "app/create-post/page:static/chunks/app/create-post/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/update-post/page.jsx": {
+      "*": {
+        "id": "(sc_client)/./app/update-post/page.jsx",
+        "name": "*",
+        "chunks": [
+          "app/update-post/page:static/chunks/app/update-post/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/update-post/page.jsx",
+        "name": "",
+        "chunks": [
+          "app/update-post/page:static/chunks/app/update-post/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/update-post/page.jsx",
+        "name": "default",
+        "chunks": [
+          "app/update-post/page:static/chunks/app/update-post/page.js"
         ],
         "async": false
       }
@@ -2704,7 +2782,7 @@
       "id": "(app-client)/./components/PostCard.jsx",
       "name": "*",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2712,7 +2790,7 @@
       "id": "(app-client)/./components/PostCard.jsx",
       "name": "",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2720,7 +2798,7 @@
       "id": "(app-client)/./components/PostCard.jsx",
       "name": "default",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2728,7 +2806,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2736,7 +2814,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2744,7 +2822,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2752,7 +2830,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2760,7 +2838,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "default",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2768,7 +2846,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "default",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2776,7 +2854,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2784,7 +2862,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2792,7 +2870,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2800,7 +2878,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2808,7 +2886,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "default",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2816,7 +2894,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "default",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2824,7 +2902,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "defaultHead",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2832,7 +2910,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "defaultHead",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2840,7 +2918,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "charSet",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2848,7 +2926,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "charSet",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2856,7 +2934,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "name",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2864,7 +2942,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "name",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2872,7 +2950,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "content",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2880,7 +2958,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "content",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2888,7 +2966,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "\"title\"",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2896,7 +2974,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "\"title\"",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2904,7 +2982,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "\"base\"",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2912,7 +2990,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "\"base\"",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2920,7 +2998,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "\"meta\"",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2928,7 +3006,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "\"meta\"",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2936,7 +3014,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "TODO(prateekbh@)",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2944,7 +3022,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "TODO(prateekbh@)",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2952,7 +3030,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "\"https",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2960,7 +3038,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "\"https",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2968,7 +3046,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "here",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2976,7 +3054,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "here",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2984,7 +3062,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "https",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -2992,7 +3070,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "https",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -3000,7 +3078,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "reduceComponentsToState",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -3008,7 +3086,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "reduceComponentsToState",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -3016,7 +3094,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "headManager",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -3024,7 +3102,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "headManager",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -3032,7 +3110,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "inAmpMode",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -3040,7 +3118,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "inAmpMode",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -3048,7 +3126,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "value",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -3056,7 +3134,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "value",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/profile/page:static/chunks/app/profile/page.js"
       ],
       "async": false
     },
@@ -3119,7 +3197,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/update-post/page:static/chunks/app/update-post/page.js"
       ],
       "async": false
     },
@@ -3127,7 +3205,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/update-post/page:static/chunks/app/update-post/page.js"
       ],
       "async": false
     },
@@ -3135,7 +3213,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/update-post/page:static/chunks/app/update-post/page.js"
       ],
       "async": false
     },
@@ -3143,7 +3221,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/update-post/page:static/chunks/app/update-post/page.js"
       ],
       "async": false
     },
@@ -3151,7 +3229,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/update-post/page:static/chunks/app/update-post/page.js"
       ],
       "async": false
     },
@@ -3159,7 +3237,79 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/update-post/page:static/chunks/app/update-post/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\profile\\page.jsx": {
+      "id": "(app-client)/./app/profile/page.jsx",
+      "name": "*",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\profile\\page.jsx#": {
+      "id": "(app-client)/./app/profile/page.jsx",
+      "name": "",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\profile\\page.jsx#default": {
+      "id": "(app-client)/./app/profile/page.jsx",
+      "name": "default",
+      "chunks": [
+        "app/profile/page:static/chunks/app/profile/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\create-post\\page.jsx": {
+      "id": "(app-client)/./app/create-post/page.jsx",
+      "name": "*",
+      "chunks": [
+        "app/create-post/page:static/chunks/app/create-post/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\create-post\\page.jsx#": {
+      "id": "(app-client)/./app/create-post/page.jsx",
+      "name": "",
+      "chunks": [
+        "app/create-post/page:static/chunks/app/create-post/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\create-post\\page.jsx#default": {
+      "id": "(app-client)/./app/create-post/page.jsx",
+      "name": "default",
+      "chunks": [
+        "app/create-post/page:static/chunks/app/create-post/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\update-post\\page.jsx": {
+      "id": "(app-client)/./app/update-post/page.jsx",
+      "name": "*",
+      "chunks": [
+        "app/update-post/page:static/chunks/app/update-post/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\update-post\\page.jsx#": {
+      "id": "(app-client)/./app/update-post/page.jsx",
+      "name": "",
+      "chunks": [
+        "app/update-post/page:static/chunks/app/update-post/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\update-post\\page.jsx#default": {
+      "id": "(app-client)/./app/update-post/page.jsx",
+      "name": "default",
+      "chunks": [
+        "app/update-post/page:static/chunks/app/update-post/page.js"
       ],
       "async": false
     }

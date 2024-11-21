@@ -10,7 +10,7 @@ const CreatePost = () => {
 
   const [form, setform] = useState({
     post: "",
-    tags: [],
+    tags: "",
   });
   const [submitting, setSubmitting] = useState(false);
 

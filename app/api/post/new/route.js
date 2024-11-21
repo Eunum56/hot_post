@@ -6,17 +6,16 @@ export const POST = async (req, res) => {
 
     try {
         await connectDB()
-        const tagsArray = tags.split(" ");
         const newPost = new Post({
             creator: userId,
             post,
-            tags: tagsArray
+            tags,
         })
-        console.log(typeof tags)
         await newPost.save()
 
         return new Response(JSON.stringify(newPost), { status: 201 })
     } catch (error) {
+        console.log(error)
         return new Response("Failed to create a new post", { status: 500 })
     }
 }

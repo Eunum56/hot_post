@@ -96,7 +96,7 @@
 }
 
 .head_text {
-  @apply mt-5 text-5xl font-extrabold font-montserrat leading-[1.15] text-black sm:text-6xl;
+  @apply sm:mt-5 text-2xl font-extrabold font-inter leading-[1.15] text-black sm:text-4xl;
 }
 
 .cu_text {
@@ -118,9 +118,12 @@
 .desc {
   @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
 }
+.update_desc {
+  @apply mt-2 text-lg text-gray-600 sm:text-xl w-full text-center;
+}
 
 .search_input {
-  @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 font-satoshi pl-5 pr-12 text-sm shadow-lg font-medium focus:border-black focus:outline-none focus:ring-0;
+  @apply block w-9/12 rounded-md border border-gray-200 bg-white py-2 font-satoshi pl-5 pr-12 text-sm shadow-lg font-medium focus:border-black focus:outline-none focus:ring-0;
 }
 
 .copy_btn {
@@ -132,7 +135,10 @@
 }
 
 .post_layout {
-  @apply space-y-6 py-8 sm:columns-2 sm:gap-6 xl:columns-3;
+  @apply space-y-6 pt-8 sm:columns-2 sm:gap-6 xl:columns-3;
+}
+.gradient_7 {
+  @apply bg-gradient-to-r from-red-500 via-orange-400 via-yellow-300 via-green-400 via-blue-400 via-indigo-500 to-purple-600;
 }
 
 /* Feed Component */
@@ -155,16 +161,20 @@
 }
 
 .dropdown {
-  @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-blue-50 min-w-[210px] flex flex-col gap-2 justify-end items-end;
+  @apply absolute right-0 top-full mt-3 w-full bg-white/30 backdrop-blur border border-white/10 rounded-lg shadow-lg p-6 min-w-[210px] flex flex-col gap-2 justify-end items-end;
 }
 
 .dropdown_link {
-  @apply text-sm font-inter text-gray-700 hover:text-gray-500 font-medium;
+  @apply text-sm font-inter text-center text-gray-700 hover:text-gray-500 font-medium;
 }
 
 /* PromptCard Component */
 .post_card {
   @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/20 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md:w-[360px] w-full h-fit;
+}
+
+.profile_card {
+  @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/20 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter w-max h-max;
 }
 
 .flex-center {
