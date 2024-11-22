@@ -1,3 +1,4 @@
+"use client";
 import { IoIosCreate } from "react-icons/io";
 
 import Link from "next/link";
