@@ -21,6 +21,10 @@ const CreatePost = () => {
     try {
       const response = await fetch("/api/post/new", {
         method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Cache-Control": "no-store",
+        },
         body: JSON.stringify({
           post: form.post,
           userId: session?.user.id,

@@ -15,7 +15,12 @@ const ProfilePage = () => {
     if (typeof window !== "undefined") {
       const fetchPost = async () => {
         try {
-          const response = await fetch(`/api/users/${session?.user.id}`);
+          const response = await fetch(`/api/users/${session?.user.id}`, {
+            headers: {
+              "Content-Type": "application/json",
+              "Cache-Control": "no-store",
+            },
+          });
           const data = await response.json();
           setPosts(data.reverse());
         } catch (error) {
@@ -38,6 +43,10 @@ const ProfilePage = () => {
     try {
       await fetch(`/api/post/${post._id.toString()}`, {
         method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          "Cache-Control": "no-store",
+        },
       });
       const FilteredPosts = Posts.filter((p) => p._id !== post._id);
       setPosts(FilteredPosts);
