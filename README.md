@@ -95,7 +95,7 @@ Replace the values with your own Google OAuth credentials and MongoDB connection
 
 ## Demo
 
-You can view live demo here :
+You can view live demo here : https://hot-post.vercel.app/
 
 ## Contributing
 
