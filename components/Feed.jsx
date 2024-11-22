@@ -73,16 +73,16 @@ const Feed = () => {
   };
 
   const { data: session } = useSession();
-  // if (!session) {
-  //   return (
-  //     <div className="mt-10">
-  //       <h1 className="head_text font-satoshi">
-  //         Sign In to{" "}
-  //         <span className="blue_gradient font-palanquin">Explore</span>
-  //       </h1>
-  //     </div>
-  //   );
-  // }
+  if (!session) {
+    return (
+      <div className="mt-10">
+        <h1 className="head_text font-satoshi">
+          Sign In to{" "}
+          <span className="blue_gradient font-palanquin">Explore</span>
+        </h1>
+      </div>
+    );
+  }
 
   return (
     <section className="feed">

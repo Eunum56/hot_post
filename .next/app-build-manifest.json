@@ -21,15 +21,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/create-post/page.js"
     ],
-    "/profile/[id]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/profile/[id]/page.js"
-    ],
     "/update-post/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/update-post/page.js"
+    ],
+    "/profile/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/profile/[id]/page.js"
     ]
   }
 }

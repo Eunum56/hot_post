@@ -749,7 +749,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./components/Loader.jsx",
         "name": "*",
         "chunks": [
-          "app/update-post/page:static/chunks/app/update-post/page.js"
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
         ],
         "async": false
       },
@@ -757,7 +757,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./components/Loader.jsx",
         "name": "",
         "chunks": [
-          "app/update-post/page:static/chunks/app/update-post/page.js"
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
         ],
         "async": false
       },
@@ -765,7 +765,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./components/Loader.jsx",
         "name": "default",
         "chunks": [
-          "app/update-post/page:static/chunks/app/update-post/page.js"
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
         ],
         "async": false
       }
@@ -1098,32 +1098,6 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
-    "(app-client)/./app/profile/[id]/page.jsx": {
-      "*": {
-        "id": "(sc_client)/./app/profile/[id]/page.jsx",
-        "name": "*",
-        "chunks": [
-          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./app/profile/[id]/page.jsx",
-        "name": "",
-        "chunks": [
-          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./app/profile/[id]/page.jsx",
-        "name": "default",
-        "chunks": [
-          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
-        ],
-        "async": false
-      }
-    },
     "(app-client)/./app/update-post/page.jsx": {
       "*": {
         "id": "(sc_client)/./app/update-post/page.jsx",
@@ -1146,6 +1120,32 @@ self.__RSC_MANIFEST={
         "name": "default",
         "chunks": [
           "app/update-post/page:static/chunks/app/update-post/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/profile/[id]/page.jsx": {
+      "*": {
+        "id": "(sc_client)/./app/profile/[id]/page.jsx",
+        "name": "*",
+        "chunks": [
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/profile/[id]/page.jsx",
+        "name": "",
+        "chunks": [
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/profile/[id]/page.jsx",
+        "name": "default",
+        "chunks": [
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
         ],
         "async": false
       }
@@ -2834,7 +2834,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./components/Loader.jsx",
       "name": "*",
       "chunks": [
-        "app/update-post/page:static/chunks/app/update-post/page.js"
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
       ],
       "async": false
     },
@@ -2842,7 +2842,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./components/Loader.jsx",
       "name": "",
       "chunks": [
-        "app/update-post/page:static/chunks/app/update-post/page.js"
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
       ],
       "async": false
     },
@@ -2850,7 +2850,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./components/Loader.jsx",
       "name": "default",
       "chunks": [
-        "app/update-post/page:static/chunks/app/update-post/page.js"
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
       ],
       "async": false
     },
@@ -3365,30 +3365,6 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\profile\\[id]\\page.jsx": {
-      "id": "(app-client)/./app/profile/[id]/page.jsx",
-      "name": "*",
-      "chunks": [
-        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\profile\\[id]\\page.jsx#": {
-      "id": "(app-client)/./app/profile/[id]/page.jsx",
-      "name": "",
-      "chunks": [
-        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\profile\\[id]\\page.jsx#default": {
-      "id": "(app-client)/./app/profile/[id]/page.jsx",
-      "name": "default",
-      "chunks": [
-        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
-      ],
-      "async": false
-    },
     "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\update-post\\page.jsx": {
       "id": "(app-client)/./app/update-post/page.jsx",
       "name": "*",
@@ -3410,6 +3386,30 @@ self.__RSC_MANIFEST={
       "name": "default",
       "chunks": [
         "app/update-post/page:static/chunks/app/update-post/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\profile\\[id]\\page.jsx": {
+      "id": "(app-client)/./app/profile/[id]/page.jsx",
+      "name": "*",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\profile\\[id]\\page.jsx#": {
+      "id": "(app-client)/./app/profile/[id]/page.jsx",
+      "name": "",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\profile\\[id]\\page.jsx#default": {
+      "id": "(app-client)/./app/profile/[id]/page.jsx",
+      "name": "default",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
       ],
       "async": false
     }
