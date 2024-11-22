@@ -17,8 +17,7 @@ const ProfilePage = () => {
         try {
           const response = await fetch(`/api/users/${session?.user.id}`, {
             headers: {
-              "Content-Type": "application/json",
-              "Cache-Control": "no-store",
+              cache: "no-store",
             },
           });
           const data = await response.json();
@@ -44,8 +43,7 @@ const ProfilePage = () => {
       await fetch(`/api/post/${post._id.toString()}`, {
         method: "DELETE",
         headers: {
-          "Content-Type": "application/json",
-          "Cache-Control": "no-store",
+          cache: "no-store",
         },
       });
       const FilteredPosts = Posts.filter((p) => p._id !== post._id);

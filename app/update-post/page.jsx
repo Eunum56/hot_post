@@ -23,8 +23,7 @@ const UpdatePost = () => {
     const getPostDetails = async () => {
       const res = await fetch(`/api/post/${paramsId}`, {
         headers: {
-          "Content-Type": "application/json",
-          "Cache-Control": "no-store",
+          cache: "no-store",
         },
       });
       const data = await res.json();

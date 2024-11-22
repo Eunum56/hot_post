@@ -22,8 +22,7 @@ const UserProfile = ({ params }) => {
     const fetchPosts = async () => {
       const response = await fetch(`/api/users/${params?.id}`, {
         headers: {
-          "Content-Type": "application/json",
-          "Cache-Control": "no-store",
+          cache: "no-store",
         },
       });
       const data = await response.json();

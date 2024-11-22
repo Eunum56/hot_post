@@ -23,7 +23,7 @@ const CreatePost = () => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Cache-Control": "no-store",
+          cache: "no-store",
         },
         body: JSON.stringify({
           post: form.post,
