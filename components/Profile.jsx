@@ -8,7 +8,7 @@ import { useSession } from "@node_modules/next-auth/react";
 import { usePathname } from "@node_modules/next/navigation";
 
 import { FaRegEdit } from "react-icons/fa";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const Profile = ({
   userId,

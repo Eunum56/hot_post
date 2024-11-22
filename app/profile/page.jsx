@@ -1,10 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
-import { useSession } from "next-auth/react";
-import { useRouter } from "next/router";
-
-import Profile from "@components/Profile";
+import { useRouter } from "next/navigation";
 import Loader from "@components/Loader";
+import { useSession } from "next-auth/react";
+import Profile from "@components/Profile";
 
 const ProfilePage = () => {
   const router = useRouter();
@@ -13,18 +12,25 @@ const ProfilePage = () => {
   const [Loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchPost = async () => {
-      const response = await fetch(`/api/users/${session?.user.id}`);
-      const data = await response.json();
-
-      setPosts(data.reverse());
-      setLoading(false);
-    };
-    if (session?.user.id) {
-      fetchPost();
+    if (typeof window !== "undefined") {
+      const fetchPost = async () => {
+        try {
+          const response = await fetch(`/api/users/${session?.user.id}`);
+          const data = await response.json();
+          setPosts(data.reverse());
+        } catch (error) {
+          console.error("Error fetching posts:", error);
+        } finally {
+          setLoading(false);
+        }
+      };
+      if (session?.user.id) {
+        fetchPost();
+      }
     }
   }, [session?.user.id]);
-  const handleEdit = async (post) => {
+
+  const handleEdit = (post) => {
     router.push(`/update-post?id=${post._id}`);
   };
 
@@ -33,16 +39,18 @@ const ProfilePage = () => {
       await fetch(`/api/post/${post._id.toString()}`, {
         method: "DELETE",
       });
-
       const FilteredPosts = Posts.filter((p) => p._id !== post._id);
       setPosts(FilteredPosts);
-      return true;
     } catch (error) {
-      console.log(error);
+      console.error("Error deleting post:", error);
     }
   };
 
-  if (!session) router.push("/");
+  useEffect(() => {
+    if (!session) {
+      router.push("/");
+    }
+  }, [session, router]);
 
   if (Loading) {
     return (
@@ -51,6 +59,7 @@ const ProfilePage = () => {
       </div>
     );
   }
+
   return (
     <Profile
       userId={Posts[0].creator._id}

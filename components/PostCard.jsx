@@ -8,9 +8,9 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useSession } from "@node_modules/next-auth/react";
 import { usePathname } from "@node_modules/next/navigation";
-import { useRouter } from "next/router";
 
 import Loader from "./Loader";
+import { useRouter } from "@node_modules/next/navigation";
 
 const PostCard = ({ post, handleTagClicked, handleEdit, handleDelete }) => {
   const { data: session } = useSession();

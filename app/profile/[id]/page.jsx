@@ -4,7 +4,7 @@ import Loader from "@components/Loader";
 import Profile from "@components/Profile";
 import { useSearchParams } from "@node_modules/next/navigation";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 
 const UserProfile = ({ params }) => {

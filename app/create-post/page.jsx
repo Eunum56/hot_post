@@ -1,8 +1,8 @@
 "use client";
-import Form from "@components/Form";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
+import Form from "@components/Form";
 
 const CreatePost = () => {
   const router = useRouter();
@@ -14,7 +14,7 @@ const CreatePost = () => {
   });
   const [submitting, setSubmitting] = useState(false);
 
-  const createPost = async (e) => {
+  const createnewPost = async (e) => {
     e.preventDefault();
     setSubmitting(true);
 
@@ -27,7 +27,6 @@ const CreatePost = () => {
           tags: form.tags,
         }),
       });
-
       if (response.ok) {
         router.push("/");
       }
@@ -37,14 +36,20 @@ const CreatePost = () => {
       setSubmitting(false);
     }
   };
-  if (!session) router.push("/");
+
+  useEffect(() => {
+    if (!session) {
+      router.push("/");
+    }
+  }, [session, router]);
+
   return (
     <Form
       type="Create"
       form={form}
       setform={setform}
       submitting={submitting}
-      handleSubmit={createPost}
+      handleSubmit={createnewPost}
     />
   );
 };
