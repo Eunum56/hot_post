@@ -28,7 +28,12 @@ const Feed = () => {
   const [searchedResults, setSearchedResults] = useState([]);
 
   const fetchPost = async () => {
-    const response = await fetch("/api/post");
+    const response = await fetch("/api/post", {
+      headers: {
+        "Content-Type": "application/json",
+        "Cache-Control": "no-store",
+      },
+    });
     const data = await response.json();
 
     setPosts(data.reverse());
