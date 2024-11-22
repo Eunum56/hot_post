@@ -9,7 +9,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { signIn, useSession, getProviders, signOut } from "next-auth/react";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 
 const Nav = () => {
   const router = useRouter();

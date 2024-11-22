@@ -718,80 +718,54 @@
         "async": false
       }
     },
-    "(app-client)/./components/Feed.jsx": {
+    "(app-client)/./components/Nav.jsx": {
       "*": {
-        "id": "(sc_client)/./components/Feed.jsx",
+        "id": "(sc_client)/./components/Nav.jsx",
         "name": "*",
         "chunks": [
-          "app/page:static/chunks/app/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       },
       "": {
-        "id": "(sc_client)/./components/Feed.jsx",
+        "id": "(sc_client)/./components/Nav.jsx",
         "name": "",
         "chunks": [
-          "app/page:static/chunks/app/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./components/Feed.jsx",
+        "id": "(sc_client)/./components/Nav.jsx",
         "name": "default",
         "chunks": [
-          "app/page:static/chunks/app/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       }
     },
-    "(app-client)/./components/Loader.jsx": {
+    "(app-client)/./components/Provider.jsx": {
       "*": {
-        "id": "(sc_client)/./components/Loader.jsx",
+        "id": "(sc_client)/./components/Provider.jsx",
         "name": "*",
         "chunks": [
-          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       },
       "": {
-        "id": "(sc_client)/./components/Loader.jsx",
+        "id": "(sc_client)/./components/Provider.jsx",
         "name": "",
         "chunks": [
-          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./components/Loader.jsx",
+        "id": "(sc_client)/./components/Provider.jsx",
         "name": "default",
         "chunks": [
-          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./components/PostCard.jsx": {
-      "*": {
-        "id": "(sc_client)/./components/PostCard.jsx",
-        "name": "*",
-        "chunks": [
-          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./components/PostCard.jsx",
-        "name": "",
-        "chunks": [
-          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./components/PostCard.jsx",
-        "name": "default",
-        "chunks": [
-          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       }
@@ -816,6 +790,130 @@
       "default": {
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
         "name": "default",
+        "chunks": [
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/link.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "*",
+        "chunks": [
+          "app/create-post/page:static/chunks/app/create-post/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "",
+        "chunks": [
+          "app/create-post/page:static/chunks/app/create-post/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "default",
+        "chunks": [
+          "app/create-post/page:static/chunks/app/create-post/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/script.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "*",
+        "chunks": [
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "",
+        "chunks": [
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "default",
+        "chunks": [
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        ],
+        "async": false
+      },
+      "handleClientScriptLoad": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "handleClientScriptLoad",
+        "chunks": [
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        ],
+        "async": false
+      },
+      "initScriptLoader": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "initScriptLoader",
+        "chunks": [
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        ],
+        "async": false
+      },
+      "mount": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "mount",
+        "chunks": [
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        ],
+        "async": false
+      },
+      "nonce": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "nonce",
+        "chunks": [
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        ],
+        "async": false
+      },
+      "dangerouslySetInnerHTML": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "dangerouslySetInnerHTML",
+        "chunks": [
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        ],
+        "async": false
+      },
+      "__html": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "__html",
+        "chunks": [
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        ],
+        "async": false
+      },
+      "as": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "as",
+        "chunks": [
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        ],
+        "async": false
+      },
+      "integrity": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "integrity",
+        "chunks": [
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        ],
+        "async": false
+      },
+      "value": {
+        "id": "(sc_client)/./node_modules/next/dist/client/script.js",
+        "name": "value",
         "chunks": [
           "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
         ],
@@ -968,84 +1066,6 @@
         "async": false
       }
     },
-    "(app-client)/./components/Nav.jsx": {
-      "*": {
-        "id": "(sc_client)/./components/Nav.jsx",
-        "name": "*",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./components/Nav.jsx",
-        "name": "",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./components/Nav.jsx",
-        "name": "default",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./components/Provider.jsx": {
-      "*": {
-        "id": "(sc_client)/./components/Provider.jsx",
-        "name": "*",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./components/Provider.jsx",
-        "name": "",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./components/Provider.jsx",
-        "name": "default",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./node_modules/next/dist/client/link.js": {
-      "*": {
-        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
-        "name": "*",
-        "chunks": [
-          "app/update-post/page:static/chunks/app/update-post/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
-        "name": "",
-        "chunks": [
-          "app/update-post/page:static/chunks/app/update-post/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
-        "name": "default",
-        "chunks": [
-          "app/update-post/page:static/chunks/app/update-post/page.js"
-        ],
-        "async": false
-      }
-    },
     "(app-client)/./app/profile/page.jsx": {
       "*": {
         "id": "(sc_client)/./app/profile/page.jsx",
@@ -1072,28 +1092,54 @@
         "async": false
       }
     },
-    "(app-client)/./app/create-post/page.jsx": {
+    "(app-client)/./components/Loader.jsx": {
       "*": {
-        "id": "(sc_client)/./app/create-post/page.jsx",
+        "id": "(sc_client)/./components/Loader.jsx",
         "name": "*",
         "chunks": [
-          "app/create-post/page:static/chunks/app/create-post/page.js"
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
         ],
         "async": false
       },
       "": {
-        "id": "(sc_client)/./app/create-post/page.jsx",
+        "id": "(sc_client)/./components/Loader.jsx",
         "name": "",
         "chunks": [
-          "app/create-post/page:static/chunks/app/create-post/page.js"
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
         ],
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./app/create-post/page.jsx",
+        "id": "(sc_client)/./components/Loader.jsx",
         "name": "default",
         "chunks": [
-          "app/create-post/page:static/chunks/app/create-post/page.js"
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/PostCard.jsx": {
+      "*": {
+        "id": "(sc_client)/./components/PostCard.jsx",
+        "name": "*",
+        "chunks": [
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/PostCard.jsx",
+        "name": "",
+        "chunks": [
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/PostCard.jsx",
+        "name": "default",
+        "chunks": [
+          "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
         ],
         "async": false
       }
@@ -1120,6 +1166,58 @@
         "name": "default",
         "chunks": [
           "app/update-post/page:static/chunks/app/update-post/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/Feed.jsx": {
+      "*": {
+        "id": "(sc_client)/./components/Feed.jsx",
+        "name": "*",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/Feed.jsx",
+        "name": "",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/Feed.jsx",
+        "name": "default",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/create-post/page.jsx": {
+      "*": {
+        "id": "(sc_client)/./app/create-post/page.jsx",
+        "name": "*",
+        "chunks": [
+          "app/create-post/page:static/chunks/app/create-post/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/create-post/page.jsx",
+        "name": "",
+        "chunks": [
+          "app/create-post/page:static/chunks/app/create-post/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/create-post/page.jsx",
+        "name": "default",
+        "chunks": [
+          "app/create-post/page:static/chunks/app/create-post/page.js"
         ],
         "async": false
       }
@@ -2806,75 +2904,58 @@
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Feed.jsx": {
-      "id": "(app-client)/./components/Feed.jsx",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Feed.jsx#": {
-      "id": "(app-client)/./components/Feed.jsx",
-      "name": "",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Feed.jsx#default": {
-      "id": "(app-client)/./components/Feed.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\styles\\globals.css#": {
+      "id": "null",
       "name": "default",
       "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
+        "static/css/app/layout.css"
+      ]
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Loader.jsx": {
-      "id": "(app-client)/./components/Loader.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Nav.jsx": {
+      "id": "(app-client)/./components/Nav.jsx",
       "name": "*",
       "chunks": [
-        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Loader.jsx#": {
-      "id": "(app-client)/./components/Loader.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Nav.jsx#": {
+      "id": "(app-client)/./components/Nav.jsx",
       "name": "",
       "chunks": [
-        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Loader.jsx#default": {
-      "id": "(app-client)/./components/Loader.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Nav.jsx#default": {
+      "id": "(app-client)/./components/Nav.jsx",
       "name": "default",
       "chunks": [
-        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\PostCard.jsx": {
-      "id": "(app-client)/./components/PostCard.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Provider.jsx": {
+      "id": "(app-client)/./components/Provider.jsx",
       "name": "*",
       "chunks": [
-        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\PostCard.jsx#": {
-      "id": "(app-client)/./components/PostCard.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Provider.jsx#": {
+      "id": "(app-client)/./components/Provider.jsx",
       "name": "",
       "chunks": [
-        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\PostCard.jsx#default": {
-      "id": "(app-client)/./components/PostCard.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Provider.jsx#default": {
+      "id": "(app-client)/./components/Provider.jsx",
       "name": "default",
       "chunks": [
-        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
@@ -2921,6 +3002,246 @@
     "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\image.js#default": {
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "default",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/create-post/page:static/chunks/app/create-post/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/create-post/page:static/chunks/app/create-post/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\link.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/create-post/page:static/chunks/app/create-post/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\link.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/create-post/page:static/chunks/app/create-post/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\link.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/create-post/page:static/chunks/app/create-post/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\link.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/create-post/page:static/chunks/app/create-post/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\script.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "*",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\script.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "*",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\script.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\script.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\script.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "default",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\script.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "default",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\script.js#handleClientScriptLoad": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "handleClientScriptLoad",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\script.js#handleClientScriptLoad": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "handleClientScriptLoad",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\script.js#initScriptLoader": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "initScriptLoader",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\script.js#initScriptLoader": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "initScriptLoader",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\script.js#mount": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "mount",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\script.js#mount": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "mount",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\script.js#nonce": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "nonce",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\script.js#nonce": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "nonce",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\script.js#dangerouslySetInnerHTML": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "dangerouslySetInnerHTML",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\script.js#dangerouslySetInnerHTML": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "dangerouslySetInnerHTML",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\script.js#__html": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "__html",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\script.js#__html": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "__html",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\script.js#as": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "as",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\script.js#as": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "as",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\script.js#integrity": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "integrity",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\script.js#integrity": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "integrity",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\script.js#value": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "value",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\script.js#value": {
+      "id": "(app-client)/./node_modules/next/dist/client/script.js",
+      "name": "value",
       "chunks": [
         "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
       ],
@@ -3214,109 +3535,6 @@
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\styles\\globals.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/layout.css"
-      ]
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Nav.jsx": {
-      "id": "(app-client)/./components/Nav.jsx",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Nav.jsx#": {
-      "id": "(app-client)/./components/Nav.jsx",
-      "name": "",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Nav.jsx#default": {
-      "id": "(app-client)/./components/Nav.jsx",
-      "name": "default",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Provider.jsx": {
-      "id": "(app-client)/./components/Provider.jsx",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Provider.jsx#": {
-      "id": "(app-client)/./components/Provider.jsx",
-      "name": "",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Provider.jsx#default": {
-      "id": "(app-client)/./components/Provider.jsx",
-      "name": "default",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/update-post/page:static/chunks/app/update-post/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/update-post/page:static/chunks/app/update-post/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\link.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "",
-      "chunks": [
-        "app/update-post/page:static/chunks/app/update-post/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\link.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "",
-      "chunks": [
-        "app/update-post/page:static/chunks/app/update-post/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\client\\link.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "default",
-      "chunks": [
-        "app/update-post/page:static/chunks/app/update-post/page.js"
-      ],
-      "async": false
-    },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\node_modules\\next\\dist\\esm\\client\\link.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "default",
-      "chunks": [
-        "app/update-post/page:static/chunks/app/update-post/page.js"
-      ],
-      "async": false
-    },
     "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\profile\\page.jsx": {
       "id": "(app-client)/./app/profile/page.jsx",
       "name": "*",
@@ -3341,27 +3559,51 @@
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\create-post\\page.jsx": {
-      "id": "(app-client)/./app/create-post/page.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Loader.jsx": {
+      "id": "(app-client)/./components/Loader.jsx",
       "name": "*",
       "chunks": [
-        "app/create-post/page:static/chunks/app/create-post/page.js"
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\create-post\\page.jsx#": {
-      "id": "(app-client)/./app/create-post/page.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Loader.jsx#": {
+      "id": "(app-client)/./components/Loader.jsx",
       "name": "",
       "chunks": [
-        "app/create-post/page:static/chunks/app/create-post/page.js"
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
       ],
       "async": false
     },
-    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\create-post\\page.jsx#default": {
-      "id": "(app-client)/./app/create-post/page.jsx",
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Loader.jsx#default": {
+      "id": "(app-client)/./components/Loader.jsx",
       "name": "default",
       "chunks": [
-        "app/create-post/page:static/chunks/app/create-post/page.js"
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\PostCard.jsx": {
+      "id": "(app-client)/./components/PostCard.jsx",
+      "name": "*",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\PostCard.jsx#": {
+      "id": "(app-client)/./components/PostCard.jsx",
+      "name": "",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\PostCard.jsx#default": {
+      "id": "(app-client)/./components/PostCard.jsx",
+      "name": "default",
+      "chunks": [
+        "app/profile/[id]/page:static/chunks/app/profile/[id]/page.js"
       ],
       "async": false
     },
@@ -3386,6 +3628,54 @@
       "name": "default",
       "chunks": [
         "app/update-post/page:static/chunks/app/update-post/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Feed.jsx": {
+      "id": "(app-client)/./components/Feed.jsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Feed.jsx#": {
+      "id": "(app-client)/./components/Feed.jsx",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\components\\Feed.jsx#default": {
+      "id": "(app-client)/./components/Feed.jsx",
+      "name": "default",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\create-post\\page.jsx": {
+      "id": "(app-client)/./app/create-post/page.jsx",
+      "name": "*",
+      "chunks": [
+        "app/create-post/page:static/chunks/app/create-post/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\create-post\\page.jsx#": {
+      "id": "(app-client)/./app/create-post/page.jsx",
+      "name": "",
+      "chunks": [
+        "app/create-post/page:static/chunks/app/create-post/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\msiaf\\OneDrive\\Desktop\\Projects\\hotpost\\app\\create-post\\page.jsx#default": {
+      "id": "(app-client)/./app/create-post/page.jsx",
+      "name": "default",
+      "chunks": [
+        "app/create-post/page:static/chunks/app/create-post/page.js"
       ],
       "async": false
     },

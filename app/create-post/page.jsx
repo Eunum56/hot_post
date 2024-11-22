@@ -2,7 +2,7 @@
 import Form from "@components/Form";
 import { useState } from "react";
 import { useSession } from "next-auth/react";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 
 const CreatePost = () => {
   const router = useRouter();

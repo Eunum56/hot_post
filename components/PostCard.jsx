@@ -7,7 +7,9 @@ import { MdOutlineCancel } from "react-icons/md";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useSession } from "@node_modules/next-auth/react";
-import { usePathname, useRouter } from "@node_modules/next/navigation";
+import { usePathname } from "@node_modules/next/navigation";
+import { useRouter } from "next/router";
+
 import Loader from "./Loader";
 
 const PostCard = ({ post, handleTagClicked, handleEdit, handleDelete }) => {
