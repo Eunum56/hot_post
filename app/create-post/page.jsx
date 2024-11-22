@@ -37,6 +37,7 @@ const CreatePost = () => {
       setSubmitting(false);
     }
   };
+  if (!session) router.push("/");
   return (
     <Form
       type="Create"

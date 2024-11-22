@@ -19,6 +19,11 @@ const PostCard = ({ post, handleTagClicked, handleEdit, handleDelete }) => {
   const [isDeleting, setIsDeleting] = useState(false);
   const menuRef = useRef(null);
 
+  const postDate = new Date(post.creator.createdAt).toLocaleDateString(
+    "en-US",
+    { dateStyle: "medium" }
+  );
+
   const toggleMenu = () => setShowMenu(!showMenu);
 
   const openDeleteDialogBox = () => setDeleteDialog(true);
@@ -52,7 +57,7 @@ const PostCard = ({ post, handleTagClicked, handleEdit, handleDelete }) => {
   const handleProfileClick = () => {
     if (post.creator._id === session?.user.id) return router.push("/profile");
     router.push(
-      `/profile/${post.creator._id}?name=${post.creator.username}&image=${post.creator.image}&about=${post.creator.description}&email=${post.creator.email}`
+      `/profile/${post.creator._id}?name=${post.creator.username}&image=${post.creator.image}&about=${post.creator.description}&createdAt=${post.creator.createdAt}`
     );
   };
 
@@ -75,7 +80,7 @@ const PostCard = ({ post, handleTagClicked, handleEdit, handleDelete }) => {
               {post.creator.username}
             </h3>
             <p className="font-inter text-xs text-gray-500">
-              {post.creator.email}
+              Posted on: {postDate}
             </p>
           </div>
         </div>

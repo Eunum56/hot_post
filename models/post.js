@@ -13,27 +13,8 @@ const PostSchema = new Schema({
     tags: {
         type: String,
         required: [true, "Tags are required"]
-    },
-    reactions: {
-        likes: {
-            type: Number,
-            default: 0
-        },
-        dislikes: {
-            type: Number,
-            default: 0
-        }
-    },
-    comments: {
-        text: {
-            type: String,
-        },
-        user: {
-            type: Schema.Types.ObjectId,
-            ref: "User",
-        }
     }
-})
+}, { timestamps: true })
 
 const Post = models.Post || model("Post", PostSchema);
 

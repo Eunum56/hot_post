@@ -11,10 +11,11 @@ import { FaRegEdit } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 
 const Profile = ({
+  userId,
   name,
   about,
   image,
-  email,
+  createdDate,
   data,
   handleEdit,
   handleDelete,
@@ -26,6 +27,9 @@ const Profile = ({
   const { data: session } = useSession();
   const router = useRouter();
   const pathName = usePathname();
+  const formattedDate = new Date(createdDate).toLocaleDateString("en-US", {
+    dateStyle: "medium",
+  });
 
   const handleUpdateClick = () => {
     setIsUpdate(false);
@@ -56,7 +60,6 @@ const Profile = ({
   const handleCancel = () => {
     setIsUpdate(true);
   };
-
   return (
     <section className="w-full">
       <div className="flex-center flex-col md:flex-row gap-2">
@@ -73,14 +76,16 @@ const Profile = ({
           <h5 className="font-extrabold text-center text-base font-satoshi text-slate-600">
             {name}
           </h5>
-          <h6 className="text-center text-slate-400">{email}</h6>
+          <h6 className="text-center text-sm text-slate-400">
+            Joined on: {formattedDate}
+          </h6>
         </div>
       </div>
       <div className="relative">
         {isUpdate ? (
           <div className="update_desc">
             {currentAbout}
-            {session?.user.email === email && pathName === "/profile" && (
+            {session?.user.id === userId && pathName === "/profile" && (
               <div
                 className="absolute right-0 top-0"
                 onClick={handleUpdateClick}

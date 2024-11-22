@@ -17,7 +17,7 @@ const ProfilePage = () => {
       const response = await fetch(`/api/users/${session?.user.id}`);
       const data = await response.json();
 
-      setPosts(data);
+      setPosts(data.reverse());
       setLoading(false);
     };
     if (session?.user.id) {
@@ -42,20 +42,22 @@ const ProfilePage = () => {
     }
   };
 
+  if (!session) router.push("/");
+
   if (Loading) {
     return (
-      <div className="mt-[50%] sm:mt-[25%]">
-        <Loader size="100px" color="rgb(52 211 153)" />
+      <div className="mt-[50%] sm:mt-[15%]">
+        <Loader size="100px" color="rgb(2 132 199)" />
       </div>
     );
   }
-
   return (
     <Profile
+      userId={Posts[0].creator._id}
       name={Posts[0].creator.username}
       about={Posts[0].creator.description}
       image={Posts[0].creator.image}
-      email={Posts[0].creator.email}
+      createdDate={Posts[0].creator.createdAt}
       data={Posts}
       handleEdit={handleEdit}
       handleDelete={handleDelete}

@@ -2,6 +2,7 @@
 import Form from "@components/Form";
 import { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import { useSession } from "next-auth/react";
 
 const UpdatePost = () => {
   const [submitting, setSubmitting] = useState(false);
@@ -9,6 +10,7 @@ const UpdatePost = () => {
   const paramsId = searchParams.get("id");
 
   const router = useRouter();
+  const { data: session } = useSession();
 
   const [form, setform] = useState({
     post: "",
@@ -53,6 +55,8 @@ const UpdatePost = () => {
       setSubmitting(false);
     }
   };
+  if (!session) router.push("/");
+
   return (
     <Form
       type="Edit"

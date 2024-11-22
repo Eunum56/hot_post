@@ -4,13 +4,17 @@ import Loader from "@components/Loader";
 import Profile from "@components/Profile";
 import { useSearchParams } from "@node_modules/next/navigation";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { useSession } from "next-auth/react";
 
 const UserProfile = ({ params }) => {
+  const { data: session } = useSession();
+  const router = useRouter();
   const searchParams = useSearchParams();
   const name = searchParams.get("name");
   const about = searchParams.get("about");
   const imgURL = searchParams.get("image");
-  const email = searchParams.get("email");
+  const createdAt = searchParams.get("createdAt");
   const [userPosts, setUserPosts] = useState([]);
   const [Loading, setLoading] = useState(true);
 
@@ -25,10 +29,12 @@ const UserProfile = ({ params }) => {
     if (params?.id) fetchPosts();
   }, [params.id]);
 
+  if (!session) router.push("/");
+
   if (Loading) {
     return (
-      <div className="mt-[50%] sm:mt-[25%]">
-        <Loader size="100px" color="rgb(6 182 212)" />
+      <div className="mt-[50%] sm:mt-[15%]">
+        <Loader size="100px" color="rgb(2 132 199)" />
       </div>
     );
   }
@@ -37,7 +43,7 @@ const UserProfile = ({ params }) => {
       name={name}
       about={about}
       image={imgURL}
-      email={email}
+      createdDate={createdAt}
       data={userPosts}
     />
   );

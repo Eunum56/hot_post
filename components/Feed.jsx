@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import PostCard from "./PostCard";
 import Loader from "./Loader";
+import { useSession } from "next-auth/react";
 
 const PostList = ({ data, handleTagClicked }) => {
   return (
@@ -30,7 +31,7 @@ const Feed = () => {
     const response = await fetch("/api/post");
     const data = await response.json();
 
-    setPosts(data);
+    setPosts(data.reverse());
     setFetching(false);
   };
 
@@ -61,7 +62,6 @@ const Feed = () => {
   };
 
   const handleTagClicked = (tagname) => {
-    console.log("tag is", tagname);
     setSearchText(tagname);
 
     const searchResult = filterPosts(tagname);
@@ -71,6 +71,18 @@ const Feed = () => {
   const preventDefault = (e) => {
     e.preventDefault();
   };
+
+  const { data: session } = useSession();
+  // if (!session) {
+  //   return (
+  //     <div className="mt-10">
+  //       <h1 className="head_text font-satoshi">
+  //         Sign In to{" "}
+  //         <span className="blue_gradient font-palanquin">Explore</span>
+  //       </h1>
+  //     </div>
+  //   );
+  // }
 
   return (
     <section className="feed">
