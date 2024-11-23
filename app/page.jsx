@@ -7,7 +7,10 @@ const Home = () => {
   const [Posts, setPosts] = useState([]);
 
   const fetchPost = async () => {
-    const response = await fetch("/api/post");
+    const response = await fetch("/api/post", {
+      method: "GET",
+      cache: "no-store",
+    });
     const data = await response.json();
     setPosts(data.reverse());
     setFetching(false);
