@@ -10,15 +10,17 @@ export const PATCH = async (req, res) => {
         const existingUser = await User.findById(userId);
 
         if (!existingUser) {
-            return new Response(JSON.stringify({ message: "User not found" }), { status: 404, headers: { 'Cache-Control': 'no-store' } });
+            const headers = new Headers(); headers.append('Cache-Control', 'no-store');
+            return new Response(JSON.stringify("User not found"), { status: 404, headers: headers });
         }
         existingUser.description = desc;
 
         await existingUser.save();
-
-        return new Response(JSON.stringify({ message: "Description updated successfully" }), { status: 200, headers: { 'Cache-Control': 'no-store' } });
+        const headers = new Headers(); headers.append('Cache-Control', 'no-store');
+        return new Response(JSON.stringify("Description updated successfully"), { status: 200, headers: headers });
     } catch (error) {
         console.error(error);
-        return new Response(JSON.stringify({ message: "Internal Server Error" }), { status: 500, headers: { 'Cache-Control': 'no-store' } });
+        const headers = new Headers(); headers.append('Cache-Control', 'no-store');
+        return new Response(JSON.stringify("Internal Server Error"), { status: 500, headers: headers });
     }
 };

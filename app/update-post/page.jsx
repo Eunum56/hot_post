@@ -24,7 +24,7 @@ const UpdatePost = () => {
       const res = await fetch(`/api/post/${paramsId}`, {
         method: "GET",
         headers: {
-          cache: "no-store",
+          "Cache-Control": "no-store",
         },
       });
       const data = await res.json();
@@ -49,7 +49,7 @@ const UpdatePost = () => {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
-          cache: "no-store",
+          "Cache-Control": "no-store",
         },
         body: JSON.stringify({
           post: form.post,

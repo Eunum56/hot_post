@@ -1,13 +1,25 @@
-import Post from "@models/post"
-import { connectDB } from "@utils/db"
+import Post from "@models/post";
+import { connectDB } from "@utils/db";
 
-export const GET = async (req, res) => {
+export const GET = async (req) => {
     try {
-        await connectDB()
+        await connectDB();
         const posts = await Post.find({}).populate('creator');
 
-        return new Response(JSON.stringify(posts), { status: 200, headers: { 'Cache-Control': 'no-store' } })
+        const headers = new Headers();
+        headers.append('Cache-Control', 'no-store');
+
+        return new Response(JSON.stringify(posts), {
+            status: 200,
+            headers: headers,
+        });
     } catch (error) {
-        return new Response("Failed to load all posts", { status: 500, headers: { 'Cache-Control': 'no-store' } })
+        const headers = new Headers();
+        headers.append('Cache-Control', 'no-store');
+
+        return new Response("Failed to load all posts", {
+            status: 500,
+            headers: headers,
+        });
     }
-}
+};

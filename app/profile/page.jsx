@@ -17,7 +17,7 @@ const ProfilePage = () => {
         const response = await fetch(`/api/users/${session?.user.id}`, {
           method: "GET",
           headers: {
-            cache: "no-store",
+            "Cache-Control": "no-store",
           },
         });
         const data = await response.json();
@@ -42,7 +42,7 @@ const ProfilePage = () => {
       await fetch(`/api/post/${post._id.toString()}`, {
         method: "DELETE",
         headers: {
-          cache: "no-store",
+          "Cache-Control": "no-store",
         },
       });
       const FilteredPosts = Posts.filter((p) => p._id !== post._id);
@@ -68,8 +68,8 @@ const ProfilePage = () => {
   if (Posts.length === 0) {
     return (
       <div className="head_text text-center orange_gradient">
-        <h1 className="mt-20 sm:mt-30">
-          This person didn't post anything yet!
+        <h1 className="mt-20 sm:mt-30 font-montserrat">
+          Create a post to view profile
         </h1>
       </div>
     );

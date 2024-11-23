@@ -4,25 +4,35 @@ import { useEffect, useState } from "react";
 
 const Home = () => {
   const [fetching, setFetching] = useState(true);
-
   const [Posts, setPosts] = useState([]);
 
   const fetchPost = async () => {
-    const response = await fetch("/api/post", {
-      method: "GET",
-      headers: {
-        cache: "no-store",
-      },
-    });
-    const data = await response.json();
+    try {
+      const response = await fetch("/api/post", {
+        method: "GET",
+        headers: {
+          "Cache-Control": "no-store",
+        },
+      });
 
-    setPosts(data.reverse());
-    setFetching(false);
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      setPosts(data.reverse());
+      console.log("Fetched Posts:", data);
+    } catch (error) {
+      console.error("Error fetching posts:", error);
+    } finally {
+      setFetching(false);
+    }
   };
 
   useEffect(() => {
     fetchPost();
   }, []);
+
   return (
     <section className="w-full flex-center flex-col">
       <h1 className="head_text text-center">

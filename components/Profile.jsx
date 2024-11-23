@@ -43,7 +43,7 @@ const Profile = ({
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
-          cache: "no-store",
+          "Cache-Control": "no-store",
         },
         body: JSON.stringify({
           desc: newAbout,

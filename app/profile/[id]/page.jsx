@@ -23,12 +23,12 @@ const UserProfile = ({ params }) => {
       const response = await fetch(`/api/users/${params?.id}`, {
         method: "GET",
         headers: {
-          cache: "no-store",
+          "Cache-Control": "no-store",
         },
       });
       const data = await response.json();
 
-      setUserPosts(data);
+      setUserPosts(data.reverse());
       setLoading(false);
     };
     if (params?.id) fetchPosts();
@@ -40,6 +40,16 @@ const UserProfile = ({ params }) => {
     return (
       <div className="mt-[50%] sm:mt-[15%]">
         <Loader size="100px" color="rgb(2 132 199)" />
+      </div>
+    );
+  }
+
+  if (userPosts.length === 0) {
+    return (
+      <div className="head_text text-center">
+        <h1 className="font-montserrat orange_gradient mt-20 sm:mt-30">
+          {name} did not post anything yet!
+        </h1>
       </div>
     );
   }
