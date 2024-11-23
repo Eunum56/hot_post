@@ -13,9 +13,9 @@ export const POST = async (req, res) => {
         })
         await newPost.save()
 
-        return new Response(JSON.stringify(newPost), { status: 201 })
+        return new Response(JSON.stringify(newPost), { status: 201, headers: { 'Cache-Control': 'no-store' } })
     } catch (error) {
         console.log(error)
-        return new Response("Failed to create a new post", { status: 500 })
+        return new Response("Failed to create a new post", { status: 500, headers: { 'Cache-Control': 'no-store' } })
     }
 }

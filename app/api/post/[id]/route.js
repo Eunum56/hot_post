@@ -1,21 +1,20 @@
-import Post from "@models/post"
-import { connectDB } from "@utils/db"
-
+import Post from "@models/post";
+import { connectDB } from "@utils/db";
 
 export const GET = async (req, { params }) => {
     try {
-        await connectDB()
+        await connectDB();
         const post = await Post.findById(params.id).populate('creator');
 
         if (!post) {
-            return new Response(JSON.stringify("Post doesn't exists"), { status: 404 })
+            return new Response(JSON.stringify("Post doesn't exist"), { status: 404, headers: { 'Cache-Control': 'no-store' } });
         }
 
-        return new Response(JSON.stringify(post), { status: 200 })
+        return new Response(JSON.stringify(post), { status: 200, headers: { 'Cache-Control': 'no-store' } });
     } catch (error) {
-        return new Response("Failed to load all posts", { status: 500 })
+        return new Response("Failed to load post", { status: 500, headers: { 'Cache-Control': 'no-store' } });
     }
-}
+};
 
 export const PATCH = async (req, { params }) => {
     const { post, tags } = await req.json();
@@ -25,7 +24,7 @@ export const PATCH = async (req, { params }) => {
         const ExistingPost = await Post.findById(params.id);
 
         if (!ExistingPost) {
-            return new Response(JSON.stringify("Post doesn't exists to update"), { status: 404 })
+            return new Response(JSON.stringify("Post doesn't exist to update"), { status: 404, headers: { 'Cache-Control': 'no-store' } });
         }
 
         ExistingPost.post = post;
@@ -33,22 +32,24 @@ export const PATCH = async (req, { params }) => {
 
         await ExistingPost.save();
 
-        return new Response(JSON.stringify(ExistingPost), { status: 200 })
-
+        return new Response(JSON.stringify(ExistingPost), { status: 200, headers: { 'Cache-Control': 'no-store' } });
     } catch (error) {
-        // console.log(error.message)
-        return new Response(JSON.stringify("Failed to Update post"), { status: 500 })
+        return new Response(JSON.stringify("Failed to update post"), { status: 500, headers: { 'Cache-Control': 'no-store' } });
     }
-}
+};
 
 export const DELETE = async (req, { params }) => {
     try {
         await connectDB();
 
-        await Post.findByIdAndRemove(params.id)
+        const post = await Post.findByIdAndRemove(params.id);
 
-        return new Response(JSON.stringify("Post deleted sussessfully"), { status: 200 })
+        if (!post) {
+            return new Response(JSON.stringify("Post doesn't exist to delete"), { status: 404, headers: { 'Cache-Control': 'no-store' } });
+        }
+
+        return new Response(JSON.stringify("Post deleted successfully"), { status: 200, headers: { 'Cache-Control': 'no-store' } });
     } catch (error) {
-        return new Response(JSON.stringify("Failed to delete post"), { status: 500 })
+        return new Response(JSON.stringify("Failed to delete post"), { status: 500, headers: { 'Cache-Control': 'no-store' } });
     }
-}
+};

@@ -22,6 +22,7 @@ const UpdatePost = () => {
   useEffect(() => {
     const getPostDetails = async () => {
       const res = await fetch(`/api/post/${paramsId}`, {
+        method: "GET",
         headers: {
           cache: "no-store",
         },
@@ -48,7 +49,7 @@ const UpdatePost = () => {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
-          "Cache-Control": "no-store",
+          cache: "no-store",
         },
         body: JSON.stringify({
           post: form.post,

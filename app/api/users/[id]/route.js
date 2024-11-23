@@ -8,9 +8,9 @@ export const GET = async (req, { params }) => {
         await connectDB();
         const posts = await Post.find({ creator: id }).populate("creator");
 
-        return new Response(JSON.stringify(posts), { status: 200 });
+        return new Response(JSON.stringify(posts), { status: 200, headers: { 'Cache-Control': 'no-store' } });
     } catch (error) {
         console.error("Error fetching posts:", error);
-        return new Response("Failed to fetch posts", { status: 500 });
+        return new Response("Failed to fetch posts", { status: 500, headers: { 'Cache-Control': 'no-store' } });
     }
 };

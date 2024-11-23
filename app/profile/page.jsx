@@ -12,25 +12,24 @@ const ProfilePage = () => {
   const [Loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const fetchPost = async () => {
-        try {
-          const response = await fetch(`/api/users/${session?.user.id}`, {
-            headers: {
-              cache: "no-store",
-            },
-          });
-          const data = await response.json();
-          setPosts(data.reverse());
-        } catch (error) {
-          console.error("Error fetching posts:", error);
-        } finally {
-          setLoading(false);
-        }
-      };
-      if (session?.user.id) {
-        fetchPost();
+    const fetchPost = async () => {
+      try {
+        const response = await fetch(`/api/users/${session?.user.id}`, {
+          method: "GET",
+          headers: {
+            cache: "no-store",
+          },
+        });
+        const data = await response.json();
+        setPosts(data.reverse());
+      } catch (error) {
+        console.error("Error fetching posts:", error);
+      } finally {
+        setLoading(false);
       }
+    };
+    if (session?.user.id) {
+      fetchPost();
     }
   }, [session?.user.id]);
 
@@ -66,14 +65,22 @@ const ProfilePage = () => {
       </div>
     );
   }
-
+  if (Posts.length === 0) {
+    return (
+      <div className="head_text text-center orange_gradient">
+        <h1 className="mt-20 sm:mt-30">
+          This person didn't post anything yet!
+        </h1>
+      </div>
+    );
+  }
   return (
     <Profile
-      userId={Posts[0].creator._id}
-      name={Posts[0].creator.username}
-      about={Posts[0].creator.description}
-      image={Posts[0].creator.image}
-      createdDate={Posts[0].creator.createdAt}
+      userId={Posts[0]?.creator?._id}
+      name={Posts[0]?.creator?.username}
+      about={Posts[0]?.creator?.description}
+      image={Posts[0]?.creator?.image}
+      createdDate={Posts[0]?.creator?.createdAt}
       data={Posts}
       handleEdit={handleEdit}
       handleDelete={handleDelete}

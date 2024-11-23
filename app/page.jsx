@@ -9,6 +9,7 @@ const Home = () => {
 
   const fetchPost = async () => {
     const response = await fetch("/api/post", {
+      method: "GET",
       headers: {
         cache: "no-store",
       },

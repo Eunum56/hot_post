@@ -6,8 +6,8 @@ export const GET = async (req, res) => {
         await connectDB()
         const posts = await Post.find({}).populate('creator');
 
-        return new Response(JSON.stringify(posts), { status: 200 })
+        return new Response(JSON.stringify(posts), { status: 200, headers: { 'Cache-Control': 'no-store' } })
     } catch (error) {
-        return new Response("Failed to load all posts", { status: 500 })
+        return new Response("Failed to load all posts", { status: 500, headers: { 'Cache-Control': 'no-store' } })
     }
 }
