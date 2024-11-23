@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PostCard from "./PostCard";
 import Loader from "./Loader";
 import { useSession } from "next-auth/react";
@@ -18,10 +18,26 @@ const PostList = ({ data, handleTagClicked }) => {
   );
 };
 
-const Feed = ({ Posts, fetching }) => {
+const Feed = () => {
   const [SearchText, setSearchText] = useState("");
   const [searchTimeout, setSearchTimeout] = useState(null);
   const [searchedResults, setSearchedResults] = useState([]);
+  const [fetching, setFetching] = useState(true);
+  const [Posts, setPosts] = useState([]);
+
+  const fetchPost = async () => {
+    const response = await fetch("/api/post", {
+      method: "GET",
+      cache: "no-store",
+    });
+    const data = await response.json();
+    setPosts(data.reverse());
+    setFetching(false);
+  };
+
+  useEffect(() => {
+    fetchPost();
+  }, []);
 
   const filterPosts = (searchtext) => {
     const register = new RegExp(searchtext, "i");
