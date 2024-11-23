@@ -7,8 +7,8 @@ const Home = () => {
   const [Posts, setPosts] = useState([]);
 
   const fetchPost = async () => {
+    setPosts([]);
     try {
-      setPosts([]);
       const response = await fetch("/api/post", {
         method: "GET",
         headers: {

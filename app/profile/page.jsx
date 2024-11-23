@@ -13,8 +13,8 @@ const ProfilePage = () => {
 
   useEffect(() => {
     const fetchPost = async () => {
+      setPosts([]);
       try {
-        setPosts([]);
         const response = await fetch(`/api/users/${session?.user.id}`, {
           method: "GET",
           headers: {
