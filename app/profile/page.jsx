@@ -13,21 +13,11 @@ const ProfilePage = () => {
 
   useEffect(() => {
     const fetchPost = async () => {
-      setPosts([]);
-      try {
-        const response = await fetch(`/api/users/${session?.user.id}`, {
-          method: "GET",
-          headers: {
-            "Cache-Control": "no-store",
-          },
-        });
-        const data = await response.json();
-        setPosts(data.reverse());
-      } catch (error) {
-        console.error("Error fetching posts:", error);
-      } finally {
-        setLoading(false);
-      }
+      const response = await fetch(`/api/users/${session?.user.id}`);
+      const data = await response.json();
+
+      setPosts(data.reverse());
+      setLoading(false);
     };
     if (session?.user.id) {
       fetchPost();
@@ -42,9 +32,6 @@ const ProfilePage = () => {
     try {
       await fetch(`/api/post/${post._id.toString()}`, {
         method: "DELETE",
-        headers: {
-          "Cache-Control": "no-store",
-        },
       });
       const FilteredPosts = Posts.filter((p) => p._id !== post._id);
       setPosts(FilteredPosts);

@@ -7,14 +7,11 @@ export const GET = async (req, { params }) => {
         const post = await Post.findById(params.id).populate('creator');
 
         if (!post) {
-            const headers = new Headers(); headers.append('Cache-Control', 'no-store');
-            return new Response(JSON.stringify("Post doesn't exist"), { status: 404, headers: headers });
+            return new Response(JSON.stringify("Post doesn't exist"), { status: 404 });
         }
-        const headers = new Headers(); headers.append('Cache-Control', 'no-store');
-        return new Response(JSON.stringify(post), { status: 200, headers: headers });
+        return new Response(JSON.stringify(post), { status: 200 });
     } catch (error) {
-        const headers = new Headers(); headers.append('Cache-Control', 'no-store');
-        return new Response("Failed to load post", { status: 500, headers: headers });
+        return new Response("Failed to load post", { status: 500 });
     }
 };
 
@@ -26,20 +23,17 @@ export const PATCH = async (req, { params }) => {
         const ExistingPost = await Post.findById(params.id);
 
         if (!ExistingPost) {
-            const headers = new Headers(); headers.append('Cache-Control', 'no-store');
-            return new Response(JSON.stringify("Post doesn't exist to update"), { status: 404, headers: headers });
+            return new Response(JSON.stringify("Post doesn't exist to update"), { status: 404 });
         }
 
         ExistingPost.post = post;
         ExistingPost.tags = tags;
 
         await ExistingPost.save();
-        const headers = new Headers(); headers.append('Cache-Control', 'no-store');
 
-        return new Response(JSON.stringify(ExistingPost), { status: 200, headers: headers });
+        return new Response(JSON.stringify(ExistingPost), { status: 200 });
     } catch (error) {
-        const headers = new Headers(); headers.append('Cache-Control', 'no-store');
-        return new Response(JSON.stringify("Failed to update post"), { status: 500, headers: headers });
+        return new Response(JSON.stringify("Failed to update post"), { status: 500 });
     }
 };
 
@@ -50,13 +44,10 @@ export const DELETE = async (req, { params }) => {
         const post = await Post.findByIdAndRemove(params.id);
 
         if (!post) {
-            const headers = new Headers(); headers.append('Cache-Control', 'no-store');
-            return new Response(JSON.stringify("Post doesn't exist to delete"), { status: 404, headers: headers });
+            return new Response(JSON.stringify("Post doesn't exist to delete"), { status: 404 });
         }
-        const headers = new Headers(); headers.append('Cache-Control', 'no-store');
-        return new Response(JSON.stringify("Post deleted successfully"), { status: 200, headers: headers });
+        return new Response(JSON.stringify("Post deleted successfully"), { status: 200 });
     } catch (error) {
-        const headers = new Headers(); headers.append('Cache-Control', 'no-store');
-        return new Response(JSON.stringify("Failed to delete post"), { status: 500, headers: headers });
+        return new Response(JSON.stringify("Failed to delete post"), { status: 500 });
     }
 };

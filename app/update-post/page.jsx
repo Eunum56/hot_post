@@ -21,12 +21,7 @@ const UpdatePost = () => {
 
   useEffect(() => {
     const getPostDetails = async () => {
-      const res = await fetch(`/api/post/${paramsId}`, {
-        method: "GET",
-        headers: {
-          "Cache-Control": "no-store",
-        },
-      });
+      const res = await fetch(`/api/post/${paramsId}`);
       const data = await res.json();
 
       setform({
@@ -47,10 +42,6 @@ const UpdatePost = () => {
     try {
       const response = await fetch(`/api/post/${paramsId}`, {
         method: "PATCH",
-        headers: {
-          "Content-Type": "application/json",
-          "Cache-Control": "no-store",
-        },
         body: JSON.stringify({
           post: form.post,
           tags: form.tags,
@@ -58,7 +49,7 @@ const UpdatePost = () => {
       });
 
       if (response.ok) {
-        router.push("/profile");
+        router.push("/");
       }
     } catch (error) {
       console.log(error);

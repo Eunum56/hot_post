@@ -12,12 +12,10 @@ export const POST = async (req, res) => {
             tags,
         })
         await newPost.save()
-        const headers = new Headers(); headers.append('Cache-Control', 'no-store');
 
-        return new Response(JSON.stringify(newPost), { status: 201, headers: headers })
+        return new Response(JSON.stringify(newPost), { status: 201 })
     } catch (error) {
         console.log(error)
-        const headers = new Headers(); headers.append('Cache-Control', 'no-store');
-        return new Response("Failed to create a new post", { status: 500, headers: headers })
+        return new Response("Failed to create a new post", { status: 500 })
     }
 }

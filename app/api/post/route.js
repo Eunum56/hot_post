@@ -6,20 +6,13 @@ export const GET = async (req) => {
         await connectDB();
         const posts = await Post.find({}).populate('creator');
 
-        const headers = new Headers();
-        headers.append('Cache-Control', 'no-store');
-
         return new Response(JSON.stringify(posts), {
-            status: 200,
-            headers: headers,
+            status: 200
         });
     } catch (error) {
-        const headers = new Headers();
-        headers.append('Cache-Control', 'no-store');
 
         return new Response("Failed to load all posts", {
-            status: 500,
-            headers: headers,
+            status: 500
         });
     }
 };

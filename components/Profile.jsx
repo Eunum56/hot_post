@@ -41,10 +41,6 @@ const Profile = ({
     try {
       const response = await fetch("/api/updateDesc", {
         method: "PATCH",
-        headers: {
-          "Content-Type": "application/json",
-          "Cache-Control": "no-store",
-        },
         body: JSON.stringify({
           desc: newAbout,
           userId: session?.user.id,
