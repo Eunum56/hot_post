@@ -8,6 +8,7 @@ const Home = () => {
 
   const fetchPost = async () => {
     try {
+      setPosts([]);
       const response = await fetch("/api/post", {
         method: "GET",
         headers: {
@@ -21,7 +22,6 @@ const Home = () => {
 
       const data = await response.json();
       setPosts(data.reverse());
-      console.log("Fetched Posts:", data);
     } catch (error) {
       console.error("Error fetching posts:", error);
     } finally {

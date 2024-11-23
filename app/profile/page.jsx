@@ -14,6 +14,7 @@ const ProfilePage = () => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
+        setPosts([]);
         const response = await fetch(`/api/users/${session?.user.id}`, {
           method: "GET",
           headers: {
